@@ -1,4 +1,4 @@
-def arithmetic_arranger(problems, display_answers=False):
+def arithmetic_visualizer(problems, display_answers=False):
     if len(problems) > 5:
         return "Error: Too many problems."
     first_operands = []
@@ -41,5 +41,5 @@ def arithmetic_arranger(problems, display_answers=False):
     else:
         arranged_problems = f"{first_line.rstrip()}\n{second_line.rstrip()}\n{dashes.rstrip()}"
     return arranged_problems
-print(f"\n{arithmetic_arranger(['32 + 698', '3801 - 2', '45 + 43', '123 + 49'])}")
-print(f"\n{arithmetic_arranger(['32 + 8', '1 - 3801', '9999 + 9999', '523 - 49'], True)}")
+print(f"\n{arithmetic_visualizer(['32 + 698', '3801 - 2', '45 + 43', '123 + 49'])}")
+print(f"\n{arithmetic_visualizer(['32 + 8', '1 - 3801', '9999 + 9999', '523 - 49'], True)}")
